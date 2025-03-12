@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import VButton from '@/Components/Base/VButton.vue';
-import LocalSendAnnouncement from '@/Components/LocalSendAnnouncement.vue';
 import Media from '@/Components/Media/Media.vue';
 import TextCardInput from '@/Components/Text/TextCardInput.vue';
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
@@ -112,8 +111,6 @@ const handlePaste = (e: ClipboardEvent) => {
             class="mx-auto flex max-w-lg flex-col gap-2 px-2 py-20"
             @paste="handlePaste"
         >
-            <LocalSendAnnouncement class="mb-4" />
-
             <h1 class="mb-2 text-2xl">{{ t('clipboard') }}</h1>
 
             <article class="w-full flex-col">
