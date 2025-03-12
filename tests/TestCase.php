@@ -21,7 +21,7 @@ abstract class TestCase extends BaseTestCase
 
     public function uploadedTextFile(): UploadedFile
     {
-        $baseFile = new File(storage_path('app/stubs/text.txt'));
+        $baseFile = new File(storage_path('stubs/text.txt'));
 
         $path = Storage::putFile('/', $baseFile);
 
